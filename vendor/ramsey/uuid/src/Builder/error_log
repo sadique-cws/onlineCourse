@@ -1,0 +1,4 @@
+[14-Jul-2023 11:57:45 UTC] PHP Fatal error:  Uncaught Error: Class "Ramsey\Uuid\Rfc4122\UuidBuilder" not found in /home/codewith/public_html/vendor/ramsey/uuid/src/Builder/DefaultUuidBuilder.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/codewith/public_html/vendor/ramsey/uuid/src/Builder/DefaultUuidBuilder.php on line 24

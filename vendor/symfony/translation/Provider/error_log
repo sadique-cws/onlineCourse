@@ -1,0 +1,4 @@
+[13-Jul-2023 14:09:04 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Provider\ProviderFactoryInterface" not found in /home/codewith/public_html/vendor/symfony/translation/Provider/AbstractProviderFactory.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/codewith/public_html/vendor/symfony/translation/Provider/AbstractProviderFactory.php on line 16

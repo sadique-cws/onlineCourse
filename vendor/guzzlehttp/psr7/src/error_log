@@ -1,0 +1,5 @@
+[13-Jul-2023 21:45:35 UTC] PHP Fatal error:  Uncaught Error: Interface "Psr\Http\Message\RequestFactoryInterface" not found in /home/codewith/public_html/vendor/guzzlehttp/psr7/src/HttpFactory.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/codewith/public_html/vendor/guzzlehttp/psr7/src/HttpFactory.php on line 26
+[13-Jul-2023 22:57:54 UTC] PHP Fatal error:  Trait "GuzzleHttp\Psr7\StreamDecoratorTrait" not found in /home/codewith/public_html/vendor/guzzlehttp/psr7/src/DroppingStream.php on line 13

@@ -1,0 +1,4 @@
+[12-Jul-2023 19:52:46 UTC] PHP Fatal error:  Uncaught Error: Class "League\CommonMark\Parser\Block\AbstractBlockContinueParser" not found in /home/codewith/public_html/vendor/league/commonmark/src/Extension/Table/TableParser.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/codewith/public_html/vendor/league/commonmark/src/Extension/Table/TableParser.php on line 26

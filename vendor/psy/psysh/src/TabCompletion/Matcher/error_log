@@ -1,0 +1,4 @@
+[14-Jul-2023 05:38:08 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\TabCompletion\Matcher\AbstractDefaultParametersMatcher" not found in /home/codewith/public_html/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodDefaultParametersMatcher.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/codewith/public_html/vendor/psy/psysh/src/TabCompletion/Matcher/ClassMethodDefaultParametersMatcher.php on line 14

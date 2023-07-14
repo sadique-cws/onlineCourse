@@ -1,0 +1,4 @@
+[14-Jul-2023 15:12:11 UTC] PHP Fatal error:  Uncaught Error: Class "Psy\CodeCleaner\CodeCleanerPass" not found in /home/codewith/public_html/vendor/psy/psysh/src/CodeCleaner/FunctionContextPass.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/codewith/public_html/vendor/psy/psysh/src/CodeCleaner/FunctionContextPass.php on line 19

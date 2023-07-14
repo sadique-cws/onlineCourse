@@ -1,0 +1,4 @@
+[14-Jul-2023 00:09:38 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\CssSelector\Exception\ParseException" not found in /home/codewith/public_html/vendor/symfony/css-selector/Exception/ExpressionErrorException.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/codewith/public_html/vendor/symfony/css-selector/Exception/ExpressionErrorException.php on line 22

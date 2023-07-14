@@ -1,0 +1,4 @@
+[13-Jul-2023 02:16:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\Extractor\ExtractorInterface" not found in /home/codewith/public_html/vendor/symfony/translation/Extractor/ChainExtractor.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/codewith/public_html/vendor/symfony/translation/Extractor/ChainExtractor.php on line 21
