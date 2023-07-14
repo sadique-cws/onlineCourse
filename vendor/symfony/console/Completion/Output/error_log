@@ -1,4 +1,0 @@
-[12-Jul-2023 19:01:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Console\Completion\Output\CompletionOutputInterface" not found in /home/codewith/public_html/vendor/symfony/console/Completion/Output/BashCompletionOutput.php:20
-Stack trace:
-#0 {main}
-  thrown in /home/codewith/public_html/vendor/symfony/console/Completion/Output/BashCompletionOutput.php on line 20
