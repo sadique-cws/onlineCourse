@@ -3,3 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/codewith/public_html/
     - /bin/cp * $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
+
