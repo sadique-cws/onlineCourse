@@ -1,14 +1,13 @@
 @extends('layouts.base')
 
 @section('content')
-    <section class="bg-teal-600 dark:bg-slate-800 text-white py-7 px-5 md:px-24 border dark:border-0 mt-14">
-        <div class="container mx-auto flex flex-col gap-2">
-
+    <section class="bg-teal-600 dark:bg-slate-800 text-white py-7 px-5 md:px-24 border dark:border-0 md:mt-20 mt-14">
+        <div class="container mx-auto flex flex-col gap-1">
             <nav class="md:flex hidden" aria-label="Breadcrumb">
-                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <ol class="inline-flex items-center space-x-1">
                     <li class="inline-flex items-center">
                         <a href="{{ route('homepage') }}"
-                            class="inline-flex items-center text-sm font-medium text-gray-100 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+                            class="inline-flex items-center text-sm font-medium text-gray-100 text-white dark:text-gray-400 dark:hover:text-white">
                             <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 20 20">
                                 <path
@@ -25,7 +24,7 @@
                                     d="m1 9 4-4-4-4" />
                             </svg>
                             <a href="{{ route('courses') }}"
-                                class="ml-1 text-sm font-medium text-gray-100 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">Courses</a>
+                                class="ml-1 text-sm font-medium text-gray-100 text-white md:ml-2 dark:text-gray-400 dark:hover:text-white">Courses</a>
                         </div>
                     </li>
                     <li>
@@ -36,7 +35,7 @@
                                     d="m1 9 4-4-4-4" />
                             </svg>
                             <a href="{{ route('courses',$course->category->cat_slug) }}"
-                                class="ml-1 capitalize text-sm font-medium text-gray-100 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">{{$course->category->cat_title}}</a>
+                                class="ml-1 capitalize text-sm font-medium text-gray-100 text-white md:ml-2 dark:text-gray-400 dark:hover:text-white">{{$course->category->cat_title}}</a>
                         </div>
                     </li>
                     <li aria-current="page">
@@ -192,11 +191,19 @@
                             <span class="font-bold text-gray-900 dark:text-white">
                                 <span  class="text-3xl">₹{{ $course->discount_fees }}</span>
                             </span>
+                            @if ($course->status == 1)
                             <form action="{{ route('make.payment', $course->slug) }}" method="post">
                                 @csrf
                                 <button type="submit"
-                                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Enroll Now</button>
+                                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded  disbled ">Enroll Now</button>
                             </form>
+                            @else 
+                            <form action="{{ route('make.payment', $course->slug) }}" method="post">
+                                @csrf
+                                <button type="submit"
+                                    class="bg-red-400 text-white font-bold py-2 px-4 rounded " disabled>Enroll Closed</button>
+                            </form>
+                            @endif
                         </div>
                     </div>
                 </div>

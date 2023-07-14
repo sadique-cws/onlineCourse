@@ -48,7 +48,7 @@
                             </div>
                           </td>
                           <td>{{ $item->duration }}</td>
-                          <td>{{ $item->fees }}</td>
+                          <td>{{ $item->discount_fees }} <del>{{ $item->fees }}</del></td>
                           <td>
                             @if ($item->image)
                                 <img width="80px" src="{{ asset('public/images/'.$item->image) }}"/>

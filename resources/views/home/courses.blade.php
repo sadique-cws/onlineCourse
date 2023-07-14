@@ -2,15 +2,15 @@
 
 @section('content')
     <!-- Courses Section -->
-    <section class="bg-teal-600 text-white p-2 md:py-7 md:px-24 dark:border-0 dark border mt-14">
-        <div class="container mx-auto flex flex-col gap-2">
+    <section class="dark:bg-teal-900 bg-teal-300 text-black dark:text-white p-5 md:py-7 md:px-24 dark:border-0 dark border  md:mt-20 mt-14">
+        <div class="container mx-auto flex flex-col gap-1">
 
 
             <nav class="flex" aria-label="Breadcrumb">
-                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <ol class="inline-flex items-center space-x-1">
                     <li class="inline-flex items-center">
                         <a href="{{ route('homepage') }}"
-                            class="inline-flex items-center text-sm font-medium text-gray-100 dark:text-slate-50 hover:text-blue-600 dark:hover:text-white">
+                            class="inline-flex items-center text-sm font-medium text-gray-800 dark:text-slate-50">
                             <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 20 20">
                                 <path
@@ -21,13 +21,13 @@
                     </li>
                     <li>
                         <div class="flex items-center ">
-                            <svg class="w-3 h-3 text-gray-100 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-3 h-3 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="m1 9 4-4-4-4" />
                             </svg>
                             <a href="{{ route('courses') }}"
-                                class="ml-1 text-sm font-medium text-gray-100 hover:text-blue-600 md:ml-2 dark:text-slate-50 dark:hover:text-white">Courses</a>
+                                class="ml-1 text-sm font-medium md:ml-2 text-black dark:text-white">Courses</a>
                         </div>
                     </li>
 
@@ -41,7 +41,7 @@
         </div>
     </section>
 
-    <div class="flex flex-col md:flex-row justify-center md:p-20 md:pt-20 p-3 gap-5">
+    <div class="flex flex-col md:flex-row justify-center md:p-20 md:pt-20 p-3 gap-5 dark:bg-slate-400 bg-slate-200">
         <div class="flex-1 hidden md:flex">
 
             <div

@@ -2,9 +2,38 @@
 
 @section('content')
 
-<section class="bg-teal-600 text-white md:py-7 md:px-24 p-5 border dark:border-0 mt-14">
-    <div class="container mx-auto flex flex-col gap-2">
-        <h1 class="md:text-4xl text-2xl font-bold">About Code With SadiQ</h1>
+<section class="bg-teal-300 dark:bg-teal-900 dark:text-white text-black md:py-7 md:px-24 p-5 border dark:border-0 md:mt-20 mt-14">
+    <div class="container mx-auto flex flex-col gap-1">
+      <nav class="flex" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1">
+            <li class="inline-flex items-center">
+                <a href="{{ route('homepage') }}"
+                    class="inline-flex items-center text-sm font-medium dark:text-gray-100 dark:text-slate-50 dark:hover:text-white">
+                    <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <div class="flex items-center ">
+                    <svg class="w-3 h-3 dark:text-gray-100 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <a href="{{ route('about') }}"
+                        class="ml-1 text-sm font-medium dark:text-gray-100 md:ml-2 dark:text-slate-50 dark:hover:text-white">About</a>
+                </div>
+            </li>
+
+
+        </ol>
+    </nav>
+
+        <h1 class="md:text-4xl text-2xl font-bold">About Us</h1>
 
 
     </div>

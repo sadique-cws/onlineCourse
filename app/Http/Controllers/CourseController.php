@@ -24,7 +24,7 @@ class CourseController extends Controller
     }
     
     public function enable($id){
-        $course = Course::firstOrFail($id);
+        $course = Course::findOrFail($id);
         if($course->status==0){
             $course->status = 1;
         }
@@ -33,7 +33,7 @@ class CourseController extends Controller
     }
     
     public function disable($id){
-        $course = Course::firstOrFail($id);
+        $course = Course::findOrFail($id);
         if($course->status==1){
             $course->status = 0;
         }
