@@ -20,5 +20,14 @@
        @include("includes.drawer")
        @include("includes.footer")
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+
+        <script>
+            const themeToggle = document.getElementById('themeToggle');
+          
+            themeToggle.addEventListener('click', () => {
+              const body = document.body;
+              body.classList.toggle('dark');
+            });
+          </script>
 </body>
 </html>

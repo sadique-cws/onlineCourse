@@ -2,13 +2,13 @@
 
 @section('content')
 
-<section class="dark:bg-teal-900 bg-teal-300 text-white md:py-7 md:px-24 p-4 md:mt-20 mt-14">
+<section class="dark:bg-teal-900 bg-teal-300 dark:text-white text-black md:py-7 md:px-24 p-4 md:mt-20 mt-14">
     <div class="container mx-auto flex flex-col gap-2">
       <nav class="flex" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1">
             <li class="inline-flex items-center">
                 <a href="{{ route('homepage') }}"
-                    class="inline-flex items-center text-sm font-medium text-gray-100 dark:text-slate-50 hover:text-white dark:hover:text-white">
+                    class="inline-flex items-center text-sm font-medium text-black dark:text-slate-50 dark:hover:text-white">
                     <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor" viewBox="0 0 20 20">
                         <path
@@ -19,13 +19,13 @@
             </li>
             <li>
                 <div class="flex items-center ">
-                    <svg class="w-3 h-3 text-gray-100 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="w-3 h-3 dark:text-gray-100 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 9 4-4-4-4" />
                     </svg>
                     <a href="{{ route('placements') }}"
-                        class="ml-1 text-sm font-medium text-gray-100 hover:text-slate-50 md:ml-2 dark:text-slate-50 dark:hover:text-white">Achievement</a>
+                        class="ml-1 text-sm font-medium text-black hover:text-slate-50 md:ml-2 dark:text-slate-50 dark:hover:text-white">Achievement</a>
                 </div>
             </li>
 

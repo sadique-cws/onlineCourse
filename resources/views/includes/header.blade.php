@@ -1,4 +1,4 @@
-<nav class="bg-white border-gray-200 fixed top-0 w-full shadow- dark:bg-gray-900">
+<nav class="bg-white border-gray-200 fixed top-0 w-full shadow-lg dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-4 p-2">
         {{-- drawer button --}}
         <button data-drawer-target="drawer-disable-body-scrolling" data-drawer-show="drawer-disable-body-scrolling"
@@ -14,11 +14,11 @@
         </button>
 
         <a href="{{ route('homepage') }}" class="flex items-center">
-            <div class="h-12 w-48 md:bg-[url('{{ asset('public/img/black.png') }}')] dark:md:bg-[url('{{ asset('public/img/white.png') }}')]  bg-[url('{{ asset('public/img/short.png') }}')]  bg-contain bg-center mr-3 bg-no-repeat	"></div>
+            <div class="h-12 w-48 md:bg-[url('{{ asset('public/img/black.png') }}')] dark:md:bg-[url('{{ asset('public/img/white.png') }}')]  bg-[url('{{ asset('public/img/short.png') }}')] dark:bg-[url('{{ asset('public/img/shortfordark.png') }}')]  bg-contain bg-center mr-3 bg-no-repeat"></div>
             
              
         </a>
-        <div class="flex items-center md:order-2">
+        <div class="flex items-center md:order-2 gap-2">
             @auth
             <a href="{{ route('dashboard') }}" type="button"
                 class="flex mr-3 text-sm items-center  gap-3 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
@@ -28,8 +28,9 @@
         </a>
             @endauth
             @guest
+            
                 <a href="{{ route('login') }}" type="button"
-                    class="text-white bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-blue-800">Login/Apply</a>
+                    class="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-3 rounded-full text-center">Login/Apply</a>
             @endguest
         </div>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">

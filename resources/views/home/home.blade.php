@@ -2,7 +2,7 @@
 
 @section('content')
 
-        <section class="bg-teal-200 dark:bg-slate-600 text-slate-900 dark:text-slate-100 md:py-36 md:px-24 p-5 border dark:border-slate-800 mt-14">
+        <section class="bg-teal-200 dark:bg-slate-700 text-slate-900 dark:text-slate-100 md:py-36 md:px-24 p-5 mt-14">
             <div class="container mx-auto flex flex-col gap-2">
                 <h1 class="text-4xl font-bold">Learn New Skills with Our Courses</h1>
                 <p class="text-lg">Upgrade your knowledge and advance your career with our comprehensive online courses.
@@ -16,7 +16,7 @@
 
 
         <!-- Courses Section -->
-        <section class="py-16 md:px-12 px-5">
+        <section class="p-5 md:px-12 bg-slate-100 dark:bg-slate-600">
                 <h2 class="text-2xl font-bold mb-2 dark:text-slate-50">Popular Courses</h2>
                 <div class="grid md:grid-cols-2 gap-8 grid-cols-1">
                     <!-- Course Card -->

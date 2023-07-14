@@ -1,7 +1,7 @@
 @extends('auth.layout')
 
 @section('authcontent')
-<div class="border p-3 rounded shadow">
+<div class="border-slate-300 border p-3 rounded shadow-lg bg-slate-100">
     <div class="flex mb-3 border-b pb-3">
         <h2 class="text-xl font-semibold font-sans text-slate-500">Apply For Join Us</h2>
     </div>

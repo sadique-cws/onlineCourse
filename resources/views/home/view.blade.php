@@ -68,7 +68,7 @@
         <div class="flex flex-col md:flex-row md:p-5 gap-5">
 
             <div class="md:flex-[2] md:ml-4 mt-4 md:mt-0">
-                <p class="text-gray-700 dark:text-gray-100 mb-4 leading-loose md:text-xl text-sm">{{$course->description}}</p>
+                <p class="text-gray-700 dark:text-gray-100 mb-4 leading-12 md:text-xl text-sm">{{$course->description}}</p>
 
                 <h2 class="md:text-2xl text-sm dark:text-white text-slate-700 font-black my-5">This Batch Includes</h2>
 
@@ -121,8 +121,7 @@
                     </h2>
                     <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2">
                       <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, sed quae! Iure quae ex officia molestias neque voluptatem tempore nostrum aut assumenda explicabo est quam, rerum id dolor, voluptatibus enim.</p>
-                        <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">The mentioned course fee is neither a yearly fee nor monthly fees. It's a one-time payment.</p>
                       </div>
                     </div>
                     <h2 id="accordion-open-heading-3">
