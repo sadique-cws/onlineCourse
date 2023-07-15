@@ -1,4 +1,4 @@
-<nav class="bg-white border-gray-200 fixed top-0 w-full shadow-lg dark:bg-gray-900">
+<nav class="bg-white border-gray-200 fixed top-0 w-full shadow-lg dark:bg-gray-900 z-50">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-4 p-2">
         {{-- drawer button --}}
         <button data-drawer-target="drawer-disable-body-scrolling" data-drawer-show="drawer-disable-body-scrolling"

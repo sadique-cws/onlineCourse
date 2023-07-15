@@ -8,6 +8,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css"  rel="stylesheet" />
     <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
         <script src="https://cdn.tailwindcss.com"></script>
+        
+      @yield('css')
 </head>
 <body class="dark:bg-slate-700">
    @include('includes.header')
@@ -19,6 +21,8 @@
 
        @include("includes.drawer")
        @include("includes.footer")
+       <script src="https://kit.fontawesome.com/9620ac7e85.js" crossorigin="anonymous"></script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
 
         <script>

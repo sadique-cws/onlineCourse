@@ -119,7 +119,7 @@
                     </div>
                   <div class="col-lg-2">
                     <div class="card">
-                        <img id="image-preview" src="{{ ($update)? asset('storage/'.$course->image) : 'https://via.placeholder.com/500?text=preview' }} " alt="" class="img-thumbnail">
+                        <img id="image-preview" src="{{ ($update)? asset('public/images/'.$course->image) : 'https://via.placeholder.com/500?text=preview' }} " alt="" class="img-thumbnail">
                     </div>
                   </div>
                 </div>
